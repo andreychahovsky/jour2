@@ -3,6 +3,7 @@ import java.util.Scanner;
 import ex1.Ex1;
 import ex2.Ex2;
 import ex3.Ex3;
+import ex4.Ex4;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -66,7 +67,30 @@ public class App {
         
         System.out.printf("└" + space + "┴" + space + "┘%n", line, line);
 
+        // Exercice 4
+        System.out.println("\nExercice 3\n");
+        System.out.printf("Entre vos montants d`achat: %s", "");
+        Double montats = (Double) scanner.nextDouble();
 
+        Ex4 ex4 = new Ex4(montats);
+        ex4.CheckPrix(montats);
+        Double prixHT = ex4.getPrixHT();
+        Double prixTTC = ex4.getPrixTTC();
+
+        String varMontats = Double.toString(montats);
+        String varPrix = Double.toString(Math.round(prixHT));
+        String var3 = Double.toString(Math.round(prixTTC));
+        col1 = "Montats";
+        col2 = "Prix HT";
+        String col3 = "Prix TTC";
+
+        System.out.printf("┌" + space + "┬" + space + "┬" + space + "┐%n", line, line, line);
+        System.out.printf("│ " + space + " │ " + space + " │ " + space + " │%n", col1, col2, col3);
+        System.out.printf("├" + space + "┼" + space + "┼" + space + "┤%n", line, line, line);
+
+        System.out.printf("│ " + space + " │ " + space + " │ " + space + " │%n", varMontats, varPrix, var3);
+
+        System.out.printf("└" + space + "┴" + space + "┴" + space + "┘%n", line, line, line);
 
 
         // End of the jour 2
