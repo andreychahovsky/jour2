@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 import ex1.Ex1;
@@ -7,6 +8,7 @@ import ex4.Ex4;
 import ex5.Ex5;
 import ex6.Ex6;
 import ex7.Ex7;
+import ex8.Ex8;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -150,6 +152,39 @@ public class App {
         Ex7 ex7 = new Ex7(i1, i2, i3);
         String replyEx7 = ex7.Compare(i1, i2, i3);
         System.out.println(replyEx7);
+
+        // Exercice 8
+        System.out.println("\n== Exercice 8 ==\n");
+
+        ArrayList<Integer> list = new ArrayList<>();
+        ArrayList<Integer> listT1 = new ArrayList<>();
+        ArrayList<Integer> listT2 = new ArrayList<>();
+
+        int i = 0;
+        int n = 10;
+        for (i = 0; i < n; i++) {
+            System.out.printf("Entre number: %s", "");
+            list.add(scanner.nextInt());
+        }
+
+        Ex8 ex8 = new Ex8(list, n);
+        ex8.PareIparer(list, n);
+
+        System.out.printf("Pairs: %d%n", ex8.getComptPairs());
+        System.out.printf("Impairs: %d%n", ex8.getComptImpairs());
+
+        listT1 = ex8.getListT1();
+        listT2 = ex8.getListT2();
+        col1 = "T1";
+        col2 = "T2";
+
+        System.out.printf("┌" + space + "┬" + space + "┐%n", line, line);
+        System.out.printf("│ " + space + " │ " + space + " │%n", col1, col2);
+        System.out.printf("├" + space + "┼" + space + "┤%n", line, line);
+
+        System.out.printf("│ " + space + " │ " + space + " │%n", listT1, listT2);
+
+        System.out.printf("└" + space + "┴" + space + "┘%n", line, line);
 
         // End of the jour 2
         col1 = "FIN";
