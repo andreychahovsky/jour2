@@ -6,6 +6,7 @@ import ex3.Ex3;
 import ex4.Ex4;
 import ex5.Ex5;
 import ex6.Ex6;
+import ex7.Ex7;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -137,13 +138,26 @@ public class App {
         
         System.out.printf("└" + space + "┴" + space + "┴" + space + "┴" + space+ "┴" + space + "┘%n", line, line, line, line, line);
 
+        // Exercice 7
+        System.out.println("\n== Exercice 7 ==\n");
+        System.out.printf("Entre nomber i1: %s", "");
+        Integer i1 = (Integer) scanner.nextInt();
+        System.out.printf("Entre nomber i2: %s", "");
+        Integer i2 = (Integer) scanner.nextInt();
+        System.out.printf("Entre nomber i3: %s", "");
+        Integer i3 = (Integer) scanner.nextInt();
+
+        Ex7 ex7 = new Ex7(i1, i2, i3);
+        String replyEx7 = ex7.Compare(i1, i2, i3);
+        System.out.println(replyEx7);
+
+        // End of the jour 2
         col1 = "FIN";
 
         System.out.printf("┌" + space + "┐%n", line);
         System.out.printf("│ " + space + " │%n", col1);
         System.out.printf("└" + space + "┘%n", line);
 
-        // End of the jour 2
         scanner.close();
 
         System.out.printf("%n· %76s ·%n", " ");

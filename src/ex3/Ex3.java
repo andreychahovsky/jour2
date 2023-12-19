@@ -1,7 +1,5 @@
 package ex3;
 
-import javax.swing.event.ChangeEvent;
-
 public class Ex3 {
     public Integer a;
     public Integer getA() {
