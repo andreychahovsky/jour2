@@ -137,6 +137,12 @@ public class App {
         
         System.out.printf("└" + space + "┴" + space + "┴" + space + "┴" + space+ "┴" + space + "┘%n", line, line, line, line, line);
 
+        col1 = "FIN";
+
+        System.out.printf("┌" + space + "┐%n", line);
+        System.out.printf("│ " + space + " │%n", col1);
+        System.out.printf("└" + space + "┘%n", line);
+
         // End of the jour 2
         scanner.close();
 
