@@ -4,6 +4,7 @@ import ex1.Ex1;
 import ex2.Ex2;
 import ex3.Ex3;
 import ex4.Ex4;
+import ex5.Ex5;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -25,7 +26,7 @@ public class App {
         Scanner scanner = new Scanner(System.in);
 
         // Exercice 1
-        System.out.println("\nExercice 1\n");
+        System.out.println("\n== Exercice 1 ==\n");
         System.out.printf("Entre l'âge d'un enfant: %s", "");
         Integer age = (Integer) scanner.nextInt();
 
@@ -35,14 +36,14 @@ public class App {
         System.out.printf("Votre enfant est dans le category %s%n", replyEx1);
 
         // Exercice 2
-        System.out.println("\nExercice 2\n");
+        System.out.println("\n== Exercice 2 ==\n");
         Ex2 ex2 = new Ex2();
         Integer replyEx2 = ex2.CalculateSumm();
 
         System.out.printf("La somme  S=1+2+3+...+ 10: %d%n", replyEx2);
 
         // Exercice 3
-        System.out.println("\nExercice 3\n");
+        System.out.println("\n== Exercice 3 ==\n");
         System.out.printf("Entre nomber a: %s", "");
         Integer a = (Integer) scanner.nextInt();
         System.out.printf("Entre nomber b: %s", "");
@@ -68,7 +69,7 @@ public class App {
         System.out.printf("└" + space + "┴" + space + "┘%n", line, line);
 
         // Exercice 4
-        System.out.println("\nExercice 3\n");
+        System.out.println("\n== Exercice 4 ==\n");
         System.out.printf("Entre vos montants d`achat: %s", "");
         Double montats = (Double) scanner.nextDouble();
 
@@ -92,6 +93,15 @@ public class App {
 
         System.out.printf("└" + space + "┴" + space + "┴" + space + "┘%n", line, line, line);
 
+        // Exercice 5
+        System.out.println("\n== Exercice 5 ==\n");
+        System.out.printf("Entre votre Nom: %s", "");
+        String nom = scanner.next();
+
+        Ex5 ex5 = new Ex5(nom);
+        String replyEx5 = ex5.SayBonjour(nom);
+        System.out.println(replyEx5);
+        
 
         // End of the jour 2
         scanner.close();
