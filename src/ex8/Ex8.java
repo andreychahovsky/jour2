@@ -40,12 +40,10 @@ public class Ex8 {
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i)%2 == 0) {
                 listT1.add(list.get(i));
-                System.out.println(listT1);
                 comptPairs = comptPairs +1;
             }
             if (list.get(i)%2 != 0) {
                 listT2.add(list.get(i));
-                System.out.println(listT2);
                 comptImpairs = comptImpairs + 1;
             }
         }
