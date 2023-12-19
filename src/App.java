@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Scanner;
 
 import ex1.Ex1;
@@ -9,6 +10,7 @@ import ex5.Ex5;
 import ex6.Ex6;
 import ex7.Ex7;
 import ex8.Ex8;
+import ex9.Ex9;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -185,6 +187,21 @@ public class App {
         System.out.printf("│ " + space + " │ " + space + " │%n", listT1, listT2);
 
         System.out.printf("└" + space + "┴" + space + "┘%n", line, line);
+
+        // Exercice 9
+        System.out.println("\n== Exercice 9 ==\n");
+
+        ArrayList<Integer> listEx9 = new ArrayList<>();
+        HashMap<Integer, String> replyEx9 = new HashMap<Integer, String>();
+        for (int k = 1; k <= 100; k++) {
+            listEx9.add(k);
+        }
+
+        Ex9 ex9 = new Ex9(listEx9);
+        replyEx9 = ex9.FizzBuzz(listEx9);
+
+        System.out.println("Votre list result is:");
+        System.out.println(replyEx9);
 
         // End of the jour 2
         col1 = "FIN";
