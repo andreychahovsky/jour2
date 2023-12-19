@@ -5,6 +5,7 @@ import ex2.Ex2;
 import ex3.Ex3;
 import ex4.Ex4;
 import ex5.Ex5;
+import ex6.Ex6;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -101,7 +102,40 @@ public class App {
         Ex5 ex5 = new Ex5(nom);
         String replyEx5 = ex5.SayBonjour(nom);
         System.out.println(replyEx5);
+
+        // Exercice 6
+        System.out.println("\n== Exercice 6 ==\n");
+        System.out.printf("Entre nomber n1: %s", "");
+        Double n1 = (Double) scanner.nextDouble();
+        System.out.printf("Entre nomber n2: %s", "");
+        Double n2 = (Double) scanner.nextDouble();
+
+        Ex6 ex6 = new Ex6(n1, n2);
+        ex6.Calculer(n1, n2);
+        Double somme = ex6.getSomme();
+        Double multiplier = ex6.getMultiplier();
+        Double soustraire = ex6.getSoustraire();
+        Double diviser = ex6.getDiviser();
+        Double reste = ex6.getReste();
+
+        String sommeString = Double.toString(somme);
+        String multiplieString = Double.toString(multiplier);
+        String soustraireString = Double.toString(soustraire);
+        String diviserString = Double.toString(diviser);
+        String resteString = Double.toString(reste);
+        col1 = "Somme";
+        col2 = "Multiplier";
+        col3 = "Soustraire";
+        String col4 = "Diviser";
+        String col5 = "Reste";
+
+        System.out.printf("┌" + space + "┬" + space + "┬" + space + "┬" + space + "┬" + space + "┐%n", line, line, line, line, line);
+        System.out.printf("│ " + space + " │ " + space + " │ " + space + " │ " + space + " │ " + space + " │%n", col1, col2, col3, col4, col5);
+        System.out.printf("├" + space + "┼" + space + "┼" + space + "┼" + space + "┼" + space + "┤%n", line, line, line, line, line);
         
+        System.out.printf("│ " + space + " │ " + space + " │ " + space + " │ " + space + " │ " + space + " │%n", sommeString, multiplieString, soustraireString, diviserString, resteString);
+        
+        System.out.printf("└" + space + "┴" + space + "┴" + space + "┴" + space+ "┴" + space + "┘%n", line, line, line, line, line);
 
         // End of the jour 2
         scanner.close();
