@@ -12,6 +12,8 @@ import ex7.Ex7;
 import ex8.Ex8;
 import ex9.Ex9;
 import ex10.Ex10;
+import ex11.Ex11;
+
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -222,7 +224,12 @@ public class App {
         // Exercice 11
         System.out.println("\n== Exercice 11 ==\n");
 
-        
+        int[] tab = {1, 2, 9, 4};
+        Ex11 ex11 = new Ex11(tab);
+        int replyEx11 = ex11.chercherGrand(tab);
+
+        System.out.println("For array {1, 2, 9, 4} max is " + replyEx11);
+
 
         // End of the jour 2
         col1 = "FIN";
