@@ -14,6 +14,7 @@ import ex9.Ex9;
 import ex10.Ex10;
 import ex11.Ex11;
 import ex12.Ex12;
+import ex13.Ex13;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -245,6 +246,12 @@ public class App {
         System.out.println("\n== Exercice 12 ==\n");
         Ex12 ex12 = new Ex12();
         ex12.devenirNumber();
+
+        // Exercice 13
+        System.out.println("\n== Exercice 13 ==\n");
+        Ex13 ex13 = new Ex13();
+        ex13.paintFace();
+        System.out.println("\n");
 
         // End of the jour 2
         col1 = "FIN";
