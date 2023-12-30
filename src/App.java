@@ -13,7 +13,7 @@ import ex8.Ex8;
 import ex9.Ex9;
 import ex10.Ex10;
 import ex11.Ex11;
-
+import ex12.Ex12;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -49,7 +49,7 @@ public class App {
         Ex2 ex2 = new Ex2();
         Integer replyEx2 = ex2.CalculateSumm();
 
-        System.out.printf("La somme  S=1+2+3+...+ 10: %d%n", replyEx2);
+        System.out.printf("La somme S=1+2+3+...+ 10: %d%n", replyEx2);
 
         // Exercice 3
         System.out.println("\n== Exercice 3 ==\n");
@@ -72,9 +72,9 @@ public class App {
         System.out.printf("┌" + space + "┬" + space + "┐%n", line, line);
         System.out.printf("│ " + space + " │ " + space + " │%n", col1, col2);
         System.out.printf("├" + space + "┼" + space + "┤%n", line, line);
-        
+
         System.out.printf("│ " + space + " │ " + space + " │%n", var1, var2);
-        
+
         System.out.printf("└" + space + "┴" + space + "┘%n", line, line);
 
         // Exercice 4
@@ -94,13 +94,18 @@ public class App {
         col2 = "Prix HT";
         String col3 = "Prix TTC";
 
-        System.out.printf("┌" + space + "┬" + space + "┬" + space + "┐%n", line, line, line);
-        System.out.printf("│ " + space + " │ " + space + " │ " + space + " │%n", col1, col2, col3);
-        System.out.printf("├" + space + "┼" + space + "┼" + space + "┤%n", line, line, line);
+        System.out.printf("┌" + space + "┬" + space + "┬" + space + "┐%n", line,
+        line, line);
+        System.out.printf("│ " + space + " │ " + space + " │ " + space + " │%n",
+        col1, col2, col3);
+        System.out.printf("├" + space + "┼" + space + "┼" + space + "┤%n", line,
+        line, line);
 
-        System.out.printf("│ " + space + " │ " + space + " │ " + space + " │%n", varMontats, varPrix, var3);
+        System.out.printf("│ " + space + " │ " + space + " │ " + space + " │%n",
+        varMontats, varPrix, var3);
 
-        System.out.printf("└" + space + "┴" + space + "┴" + space + "┘%n", line, line, line);
+        System.out.printf("└" + space + "┴" + space + "┴" + space + "┘%n", line,
+        line, line);
 
         // Exercice 5
         System.out.println("\n== Exercice 5 ==\n");
@@ -137,13 +142,19 @@ public class App {
         String col4 = "Diviser";
         String col5 = "Reste";
 
-        System.out.printf("┌" + space + "┬" + space + "┬" + space + "┬" + space + "┬" + space + "┐%n", line, line, line, line, line);
-        System.out.printf("│ " + space + " │ " + space + " │ " + space + " │ " + space + " │ " + space + " │%n", col1, col2, col3, col4, col5);
-        System.out.printf("├" + space + "┼" + space + "┼" + space + "┼" + space + "┼" + space + "┤%n", line, line, line, line, line);
-        
-        System.out.printf("│ " + space + " │ " + space + " │ " + space + " │ " + space + " │ " + space + " │%n", sommeString, multiplieString, soustraireString, diviserString, resteString);
-        
-        System.out.printf("└" + space + "┴" + space + "┴" + space + "┴" + space+ "┴" + space + "┘%n", line, line, line, line, line);
+        System.out.printf("┌" + space + "┬" + space + "┬" + space + "┬" + space + "┬"
+        + space + "┐%n", line, line, line, line, line);
+        System.out.printf("│ " + space + " │ " + space + " │ " + space + " │ " +
+        space + " │ " + space + " │%n", col1, col2, col3, col4, col5);
+        System.out.printf("├" + space + "┼" + space + "┼" + space + "┼" + space + "┼"
+        + space + "┤%n", line, line, line, line, line);
+
+        System.out.printf("│ " + space + " │ " + space + " │ " + space + " │ " +
+        space + " │ " + space + " │%n", sommeString, multiplieString,
+        soustraireString, diviserString, resteString);
+
+        System.out.printf("└" + space + "┴" + space + "┴" + space + "┴" + space+ "┴"
+        + space + "┘%n", line, line, line, line, line);
 
         // Exercice 7
         System.out.println("\n== Exercice 7 ==\n");
@@ -168,8 +179,8 @@ public class App {
         int i = 0;
         int n = 10;
         for (i = 0; i < n; i++) {
-            System.out.printf("Entre number: %s", "");
-            list.add(scanner.nextInt());
+        System.out.printf("Entre number: %s", "");
+        list.add(scanner.nextInt());
         }
 
         Ex8 ex8 = new Ex8(list, n);
@@ -197,7 +208,7 @@ public class App {
         ArrayList<Integer> listEx9 = new ArrayList<>();
         HashMap<Integer, String> replyEx9 = new HashMap<Integer, String>();
         for (int k = 1; k <= 100; k++) {
-            listEx9.add(k);
+        listEx9.add(k);
         }
 
         Ex9 ex9 = new Ex9(listEx9);
@@ -210,7 +221,7 @@ public class App {
         System.out.println("\n== Exercice 10 ==\n");
 
         String stringEx10 = new String();
-        
+
         Ex10 ex10 = new Ex10(stringEx10);
 
         System.out.printf("Entre string: %s", "");
@@ -230,6 +241,10 @@ public class App {
 
         System.out.println("For array {1, 2, 9, 4} max is " + replyEx11);
 
+        // Exercice 12
+        System.out.println("\n== Exercice 12 ==\n");
+        Ex12 ex12 = new Ex12();
+        ex12.devenirNumber();
 
         // End of the jour 2
         col1 = "FIN";
@@ -239,7 +254,7 @@ public class App {
         System.out.printf("└" + space + "┘%n", line);
 
         scanner.close();
-
         System.out.printf("%n· %76s ·%n", " ");
+
     }
 }
